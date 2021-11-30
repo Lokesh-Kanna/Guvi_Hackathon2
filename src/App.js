@@ -27,7 +27,7 @@ function Home() {
       body: formData,
     };
 
-    const result = await fetch("/posts", reqCred)
+    const result = await fetch("/files", reqCred)
       .then((res) => res.json())
       .then((data) => console.log(data.id))
       .catch((err) => console.log(err));
