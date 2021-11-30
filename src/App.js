@@ -27,9 +27,9 @@ function Home() {
       body: formData,
     };
 
-    const result = await fetch("/files", reqCred)
+    const result = await fetch("http://localhost:9000/files", reqCred)
       .then((res) => res.json())
-      .then((data) => console.log(data.id))
+      .then((data) => console.log(data))
       .catch((err) => console.log(err));
     console.log(result);
   };
@@ -48,5 +48,4 @@ function Home() {
     </div>
   );
 }
-
 export default App;
