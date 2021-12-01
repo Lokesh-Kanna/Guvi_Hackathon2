@@ -69,6 +69,9 @@ function SecondPage() {
         <button type="submit">Upload</button>
       </form>
       <div>
+        <p>Endpoints: /drive | /users/signup</p>
+      </div>
+      <div>
         {fileDisp.map((file) => {
           return <FileDisplay name={file.fileName} path={file.path} />;
         })}
