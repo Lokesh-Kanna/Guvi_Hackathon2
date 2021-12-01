@@ -21,6 +21,10 @@ function Home() {
     <div>
       <h1>Welcome to L-drive</h1>
       <button onClick={() => navigate("/users/signup")}>Sign Up</button>
+      <br />
+      <div>
+        <p>Endpoints: /drive | /users/signup</p>
+      </div>
     </div>
   );
 }
@@ -66,9 +70,7 @@ function SecondPage() {
         ></input>
         <button type="submit">Upload</button>
       </form>
-      <div>
-        <p>Endpoints: /drive | /users/signup</p>
-      </div>
+
       <div>
         {fileDisp.map((file) => {
           return <FileDisplay name={file.fileName} path={file.path} />;
